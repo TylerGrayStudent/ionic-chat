@@ -1,0 +1,49 @@
+.from-me {
+  background-color: #248bf5;
+  float: right;
+}
+.from-me::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 12px;
+  height: 0;
+  border: 19px solid transparent;
+  border-left-color: #248bf5;
+  border-right: 0;
+  border-bottom: 0;
+  margin-top: -4.5px;
+  margin-right: -19px;
+}
+
+.from-them {
+  background-color: grey;
+  float: left;
+}
+
+.from-them::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 12px;
+  height: 0;
+  border: 19px solid transparent;
+  border-right-color: grey;
+  border-left: 0;
+  border-bottom: 0;
+  margin-top: -4.5px;
+  margin-left: -19px;
+}
+
+.bubble {
+  border-radius: 10px;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 50%;
+  position: relative;
+}
